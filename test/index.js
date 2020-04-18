@@ -15,5 +15,5 @@ console.log(
                 </label>
             </body>
         </html>
-    `).querySelector("#body small[name='xxcool']")
+    `).querySelector("#body small[name='xxcool']").text
 );

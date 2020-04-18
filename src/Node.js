@@ -132,6 +132,18 @@ class Node {
         return null;
     }
 
+    get rawText() {
+        if(this.children.length > 0) {
+            if(this.children[0].type === "text") 
+                return this.children[0].data;
+        }
+        return "";
+    }
+
+    get text() {
+        return this.rawText.trim();
+    }
+
     getElementsByMatcher(matcher) {
 
         let result = [];
@@ -150,11 +162,11 @@ class Node {
         return result;
     }
 
-    getElementByTypeName(name) {
+    getElementByTagName(name) {
         return this.getElementByMatcher(element => element.name === name);
     }
 
-    getElementsByTypeName(name) {
+    getElementsByTagName(name) {
         return this.getElementsByMatcher(element => element.name === name);
     }
 
