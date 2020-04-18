@@ -1,0 +1,29 @@
+{
+  "name": "parse5-queryselector",
+  "version": "0.0.1",
+  "description": "A parse5 TreeAdapter with query-selector ability",
+  "keywords": [
+    "parse5-queryselector",
+    "parse5",
+    "queryselector",
+    "html-parser",
+    "html",
+    "parser"
+  ],
+  "homepage": "https://github.com/LinusDierheimer/parse5-queryselector#readme",
+  "bugs": "https://github.com/LinusDierheimer/parse5-queryselector/issues",
+  "author": "Linus Dierheimer <Linus@Dierheimer.de> (https://github.com/LinusDierheimer/)",
+  "repository": "github:LinusDierheimer/parse5-queryselector",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "css-selector-parser": "^1.4.1",
+    "parse5": "^6.0.0"
+  },
+  "files": [
+    "src/"
+  ]
+}
